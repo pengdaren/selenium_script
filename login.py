@@ -38,6 +38,7 @@ class TestLogIn():
         noCustName = self.driver.find_element_by_css_selector("from[class='el-form'] > div:nth-child(1)>div>div[class='el-input el-input--suffix']").text
         assert noCustName == '请输入客户名称'
         self.driver.find_element_by_css_selector("input.el-input__inner[placeholder='请输入客户名称']").send_keys('脚本私有库新增客户')
+
         '''    ul:nth-child(1)
         custMange = EC.visibility_of_all_elements_located(custmanger_element)
         if custMange:
